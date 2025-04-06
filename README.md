@@ -26,7 +26,7 @@ The Resume Snippet Paster is a Chrome extension designed to help users quickly p
 
 ## Folder Structure
 ```
-resume_paste_extension/  
+resume_snippet_paster/  
 ├── manifest.json       # Extension configuration  
 ├── background.js       # Manages context menu and pasting  
 ├── popup.js            # Handles adding and deleting snippets  
