@@ -1,0 +1,47 @@
+<!--
+/**
+ * Resume Snippet Paster
+ * 
+ * © 2025 Anand Kumar. All rights reserved.
+ * 
+ * This software is provided "as is", without warranty of any kind, express or implied,
+ * including but not limited to the warranties of merchantability, fitness for a particular purpose,
+ * and noninfringement. In no event shall the authors or copyright holders be liable for any claim,
+ * damages, or other liability, whether in an action of contract, tort, or otherwise, arising from,
+ * out of, or in connection with the software or the use or other dealings in the software.
+ * 
+ * License: MIT (see LICENSE file for details)
+ */
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Snippet Paster</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 450px; }
+    input, textarea { width: 100%; margin-bottom: 10px; }
+    button { margin-right: 5px; }
+    .snippet { border: 1px solid #ccc; padding: 5px; margin-bottom: 5px; }
+    .snippet-header { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div style="margin-top: 10px; font-size: 12px; color: gray;">
+    <strong>Disclaimer:</strong> This extension is provided "as is" without any guarantees or warranty. 
+    Use at your own risk. It has not been thoroughly tested and is primarily being released 
+    to address a specific, immediate use case.
+  </div>
+
+  <h2>Resume Snippets</h2>
+  <form id="addSnippetForm">
+    <input type="text" id="snippetTitle" placeholder="Snippet Title" required>
+    <textarea id="snippetContent" placeholder="Snippet Content" rows="3" required></textarea>
+    <button type="submit">Add Snippet</button>
+  </form>
+  <hr>
+  <div id="snippetList"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
